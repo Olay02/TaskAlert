@@ -126,6 +126,11 @@ select {
     box-shadow: var(--inner-shadow);
 }
 
+select option {
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
 input:focus,
 select:focus {
     outline: none;
