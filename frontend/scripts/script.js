@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeModalBtn = document.querySelector(".close-modal");
 
   // API URL - change this to your EC2 instance when deployed
-  const API_URL = "http://localhost:3000/api";
+  const API_URL = `http://${window.location.hostname}:3000/api`;
 
   // Current user - would be set after login
   let currentUserId = 1; // Default to test user for now

@@ -11,6 +11,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const HOST = process.env.API_HOST || "localhost";
 
 // Middleware
 app.use(cors());
@@ -306,5 +307,5 @@ app.delete("/api/tasks/:taskId", (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on http://${HOST}:${PORT}`);
 });
